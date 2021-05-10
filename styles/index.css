@@ -5,53 +5,83 @@ body {
     margin: 0px;
 }
     header {
-        display: flex;
-        flex-flow: row nowrap;
-        padding: 30px 68px;
-        justify-content: space-between;
-        align-items: center;
         background-color: #2196f3;
         border-bottom: 1px solid #00000069;
+        height: 52px;
+        padding: 31px 10px 31px 0;
     }
-        #logoSurAmerica {
-            width: 240px;
-            height: 70px;
+        #barraDeNavegacion {
+            display: grid;
+            grid-template-columns: 30% 60% 10%;
+            margin: 0 auto;
+            align-items: center;
+            max-width: 1020px;
+            justify-items: center;
         }
-        #menuDeEnlaces {
-            display: inline-block;
-        }
-        header a {
-            text-decoration: none;
-        }
-        header span {
-            margin: 0 11px;
-            font-size: 20px;
-            color: #101f73;
-            font-weight: bold;
-        }
-        #logoCesta {
-            vertical-align: middle;
-            font-size: 38px;
-            color: firebrick;
-        }
-        #btnMenuDesplegable {
-            background-color: #ddd7d7;
-            border: 0px;
-            vertical-align: middle;
+            #logoSurAmerica {
+                width: 70%;
+                height: auto;
+            }
+            #menuDeEnlaces {
+                display: inline-block;
+            }
+                header a {
+                    text-decoration: none;
+                }
+                    header span {
+                        margin: 0 11px;
+                        font-size: 19px;
+                        color: #101f73;
+                        font-weight: bold;
+                    }
+                #logoCesta {
+                    vertical-align: middle;
+                    font-size: 38px;
+                    color: firebrick;
+                }
+                #btnMenuDesplegable {
+                    background-color: #ddd7d7;
+                    border: 0px;
+                    display: none;
+                    height: 28px;
+                    width: 100%;
+                    width: fit-content;
+                    padding: 0;
+                }
+                    #btnMenuDesplegable span {
+                        color: black;
+                        width: 100%;
+                        margin: 0;
+                    }
+        #navegacionPantallasChicas {
             display: none;
-            margin-left: 30px;
-            height: 36px;
-        }
-        #btnMenuDesplegable span {
-            color: black;
+            right: 0;
+            position: fixed;
         }
 
 
-@media (max-width : 950px) {
-    #menuDeEnlaces {
-        display: none;
+@media (max-width : 832px) {
+    header {
+        height: fit-content;
     }
-    #btnMenuDesplegable {
-        display: initial;
+        #barraDeNavegacion {
+            grid-template-columns: 60% 20% 20%;
+        }
+            #menuDeEnlaces {
+                display: none;
+            }
+            #cajaCesta {
+                justify-self: end;
+            }
+                #logoCesta {
+                    font-size: 41px;
+                }
+            #btnMenuDesplegable {
+                display: initial;
+                width: 57px;
+                height: 34px;
+            }
+        #navegacionPantallasChicas {
+            display: block;
+        }
     }
-}
