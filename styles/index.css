@@ -1,0 +1,57 @@
+* {
+    font-family: 'Lato', sans-serif;
+}
+body {
+    margin: 0px;
+}
+    header {
+        display: flex;
+        flex-flow: row nowrap;
+        padding: 30px 68px;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #2196f3;
+        border-bottom: 1px solid #00000069;
+    }
+        #logoSurAmerica {
+            width: 240px;
+            height: 70px;
+        }
+        #menuDeEnlaces {
+            display: inline-block;
+        }
+        header a {
+            text-decoration: none;
+        }
+        header span {
+            margin: 0 11px;
+            font-size: 20px;
+            color: #101f73;
+            font-weight: bold;
+        }
+        #logoCesta {
+            vertical-align: middle;
+            font-size: 38px;
+            color: firebrick;
+        }
+        #btnMenuDesplegable {
+            background-color: #ddd7d7;
+            border: 0px;
+            vertical-align: middle;
+            display: none;
+            margin-left: 30px;
+            height: 36px;
+        }
+        #btnMenuDesplegable span {
+            color: black;
+        }
+
+
+@media (max-width : 950px) {
+    #menuDeEnlaces {
+        display: none;
+    }
+    #btnMenuDesplegable {
+        display: initial;
+    }
+}
