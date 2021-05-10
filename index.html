@@ -11,30 +11,37 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <header>
         <nav id="barraDeNavegacion">
             <img src="imgs/img-temporal.png" alt="logo de SurAmerica Airlines" id="logoSurAmerica">
             <nav id="menuDeEnlaces">
                 <a href=""><span>Empieza aquí</span></a>
-                <a href=""><span>Adquirir vuelo</span></a>
-                <a href=""><span>Noticias</span></a>
-                <a href=""><span>Conocenos</span></a>
+                <a href="adquirir-vuelo.html"><span>Adquirir vuelo</span></a>
+                <a href="noticias.html"><span>Noticias</span></a>
+                <a href="acerca-de-nosotros.html"><span>Conocenos</span></a>
             </nav>
-            <a href="" id="cajaCesta"><span id="logoCesta" class="material-icons-outlined">shopping_cart</span></a>
-            <button id="btnMenuDesplegable">
-                <span class="material-icons-outlined">menu</span>
-            </button>
+            <a href="cesta.html" id="cajaCesta"><span id="logoCesta" class="material-icons-outlined">shopping_cart</span></a>
+            <button id="btnDesplegarMenu"><span class="material-icons-outlined">menu</span></button>
         </nav>
 
         <!-- Menu de navegacion para pantallas pequeñas -->
         <nav id="navegacionPantallasChicas">
+            <span>
+                <h2>Menú:</h2>
+                <button id="btnCerrarMenu">
+                    <span class="material-icons-outlined">close</span>
+                </button>
+            </span>
             <ol>
-                <li><a href=""><span></span></a></li>
-                <li><a href=""><span></span></a></li>
-                <li><a href=""><span></span></a></li>
-                <li><a href=""><span></span></a></li>
+                <li class="enlacesPantallaChica"><a href=""><span>Empieza aquí</span></a></li>
+                <li class="enlacesPantallaChica"><a href="adquirir-vuelo.html"><span>Adquirir vuelo</span></a></li>
+                <li class="enlacesPantallaChica"><a href="noticias.html"><span>Noticias</span></a></li>
+                <li class="enlacesPantallaChica"><a href="acerca-de-nosotros.html"><span>Conocenos</span></a></li>
             </ol>
         </nav>
+        <script src="js/desplegarMenuPantallasChicas.js"></script>
     </header>
+
 </body>
 </html>

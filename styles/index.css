@@ -34,12 +34,15 @@ body {
                         color: #101f73;
                         font-weight: bold;
                     }
+                    header span:hover {
+                        color: blue;
+                    }
                 #logoCesta {
                     vertical-align: middle;
                     font-size: 38px;
                     color: firebrick;
                 }
-                #btnMenuDesplegable {
+                #btnDesplegarMenu {
                     background-color: #ddd7d7;
                     border: 0px;
                     display: none;
@@ -48,16 +51,54 @@ body {
                     width: fit-content;
                     padding: 0;
                 }
-                    #btnMenuDesplegable span {
+                    #btnDesplegarMenu span {
                         color: black;
                         width: 100%;
                         margin: 0;
                     }
+
+        /* Panel de navegación para pantallas chicas */
         #navegacionPantallasChicas {
-            display: none;
-            right: 0;
+            display: block;
             position: fixed;
+            top: 0;
+            left: 100%;
+            height: 100%;
+            width: 100%;
+            background: #2196f3;
+            overflow-x: auto;
+            transition: left .6s ease-in-out 0s;
         }
+            #navegacionPantallasChicas > span {
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-between;
+                align-items: center;
+                margin: 13px 11px;
+            }
+                #navegacionPantallasChicas > span > h2 {
+                    margin-left: 18px;
+                }
+                #btnCerrarMenu {
+                    border: 0;
+                    margin-right: 20px;
+                }
+            #navegacionPantallasChicas > ol {
+                margin: 0 auto;
+                padding: 0 44px;
+                max-width: 500px;
+                height: 330px;
+            }
+                .enlacesPantallaChica {
+                    list-style-type: none;
+                    border-bottom: 1px solid black;
+                    display: flex;
+                    align-items: center;
+                    height: 69px;
+                }
+                    .enlacesPantallaChica > span {
+                        margin: 10px 0;
+                    }
 
 
 @media (max-width : 832px) {
@@ -70,18 +111,18 @@ body {
             #menuDeEnlaces {
                 display: none;
             }
+                header span:hover {
+                    color: #101f73;
+                }
             #cajaCesta {
                 justify-self: end;
             }
                 #logoCesta {
                     font-size: 41px;
                 }
-            #btnMenuDesplegable {
+            #btnDesplegarMenu {
                 display: initial;
                 width: 57px;
                 height: 34px;
             }
-        #navegacionPantallasChicas {
-            display: block;
-        }
     }
