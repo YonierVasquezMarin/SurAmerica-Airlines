@@ -81,7 +81,10 @@ body {
                 }
                 #btnCerrarMenu {
                     border: 0;
-                    margin-right: 20px;
+                    background-color: transparent;
+                }
+                #btnCerrarMenu > span {
+                    font-size: 38px;
                 }
             #navegacionPantallasChicas > ol {
                 margin: 0 auto;
