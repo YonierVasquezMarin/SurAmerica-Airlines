@@ -84,7 +84,7 @@ body {
                     background-color: transparent;
                 }
                 #btnCerrarMenu > span {
-                    font-size: 38px;
+                    font-size: 37px;
                 }
             #navegacionPantallasChicas > ol {
                 margin: 0 auto;
@@ -104,7 +104,7 @@ body {
                     }
 
 
-@media (max-width : 832px) {
+@media (max-width : 841px) {
     header {
         height: fit-content;
     }
