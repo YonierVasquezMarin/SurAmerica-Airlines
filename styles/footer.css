@@ -1,0 +1,6 @@
+#footer-centrado {
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 200px;
+    margin: 16px auto;
+}

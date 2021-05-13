@@ -90,6 +90,7 @@
     }
         #zonaDeComentarios p {
             font-size: 29px;
+            font-family: 'Newsreader', serif;
         }
         #zonaDeComentarios img {
             max-width: 80px;

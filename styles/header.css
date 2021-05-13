@@ -43,7 +43,7 @@ body {
                     color: firebrick;
                 }
                 #btnDesplegarMenu {
-                    background-color: #ddd7d7;
+                    background-color: transparent;
                     border: 0px;
                     display: none;
                     height: 28px;
@@ -55,6 +55,7 @@ body {
                         color: black;
                         width: 100%;
                         margin: 0;
+                        font-size: 39px;
                     }
 
         /* Panel de navegación para pantallas chicas */
