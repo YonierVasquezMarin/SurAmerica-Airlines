@@ -55,3 +55,37 @@
         margin-bottom: 56px;
     }
 }
+
+
+/* Zona de comentarios */
+#zonaDeComentarios {
+    background-color: #d0d0c0;
+    padding: 0 21px;
+}
+#zonaDeComentarios-centrado {
+    display: flex;
+    flex-flow: column nowrap;
+    max-width: 1210px;
+    margin: 0 auto;
+}
+    #zonaDeComentarios h1 {
+        font-size: 31px;
+        align-self: center;
+    }
+    #zonaDeComentarios-centrado div {
+        max-width: 480px;
+    }
+        #zonaDeComentarios p {
+            font-size: 29px;
+        }
+        #zonaDeComentarios img {
+            max-width: 80px;
+            max-height: 80px;
+            vertical-align: middle;
+            border: 2px solid cornflowerblue;
+            border-radius: 28px;
+        }
+        #zonaDeComentarios span {
+            margin-left: 11px;
+            font-size: 21px;
+        }
