@@ -62,7 +62,7 @@
 
 /* Zona de comentarios */
 #zonaDeComentarios {
-    background-color: #d0d0c0;
+    background-color: #ebebeb;
     padding: 0 27px;
 }
 #zonaDeComentarios-centrado {
@@ -89,7 +89,7 @@
         margin-right: 44px;
     }
         #zonaDeComentarios p {
-            font-size: 29px;
+            font-size: 31px;
             font-family: 'Newsreader', serif;
         }
         #zonaDeComentarios img {
