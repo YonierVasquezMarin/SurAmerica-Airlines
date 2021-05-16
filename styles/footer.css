@@ -1,7 +1,7 @@
 footer {
     background-color: #2196f3;
     color: white;
-    font-size: 19px;
+    font-size: 17px;
 }
     #footer-contenedor {
         display: flex;
@@ -39,7 +39,7 @@ footer {
     #footer-contenedor + div {
         padding: 22px;
         margin-top: 21px;
-        font-size: 19px;
+        font-size: 16px;
     }
         i.em-hearts {
             height: 1.3em;

@@ -1,0 +1,55 @@
+main {
+    background-color: #607d8b30;
+}
+    #articulos {
+        max-width: 840px;
+        margin: 0px auto;
+        padding: 0 20px 36px;
+        display: flex;
+        flex-flow: column nowrap;
+        font-family: 'Newsreader', serif;
+    }
+        #articulos > h1 {
+            margin: 30px 0px;
+            font-size: 38px;
+        }
+        #articulos > section:not(:first-of-type) {
+            margin-top: 41px;
+        }
+        #articulos > section {
+            display: flex;
+            flex-flow: row wrap;
+            width: 100%;
+            min-height: 170px;
+            border-radius: 20px;
+            padding: 22px;
+            justify-content: space-between;
+            box-sizing: border-box;
+            box-shadow: 0px 0px 10px 1px grey;
+            background-color: white;
+        }
+            #articulos > section > div {
+                max-width: 400px;
+                margin-right: 20px;
+                margin-bottom: 4px;
+            }
+                #articulos > section > div > h2 {
+                    margin-top: 0px;
+                }
+                    #articulos a {
+                        text-decoration: none;
+                        color: black;
+                    }
+                    #articulos a:hover {
+                        text-decoration: underline;
+                    }
+                    #articulos a:visited {
+                        color: black;
+                    }
+                #articulos > section > div > p {
+                    font-size: 19px;
+                }
+            #articulos > section > img {
+                max-width: 100%;
+                max-height: 120px;
+            }
