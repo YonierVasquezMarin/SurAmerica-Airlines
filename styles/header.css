@@ -1,8 +1,6 @@
-* {
-    font-family: 'Lato', sans-serif;
-}
 body {
     margin: 0px;
+    font-family: 'Lato', sans-serif;
 }
     header {
         background-color: #2196f3;
@@ -105,7 +103,7 @@ body {
                     }
 
 
-@media (max-width : 841px) {
+@media (max-width : 892px) {
     header {
         height: fit-content;
     }
