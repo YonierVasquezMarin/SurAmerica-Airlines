@@ -1,0 +1,34 @@
+#articulo {
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 10px auto;
+    max-width: 1000px;
+    font-family: 'Ubuntu', sans-serif;
+    color: #3c3535;
+    padding: 0 21px;
+}
+    #articulo > h1 {
+        font-size: 33px;
+        color: #464545;
+    }
+    #articulo > p {
+        line-height: 29px;
+        font-size: 21px;
+    }
+        #articulo > p:nth-of-type(1)::first-letter {
+            font-size: 55px;
+            color: red;
+            margin-right: 5px;
+        }
+    #articulo > img {
+        width: 100%;
+        max-width: 360px;
+        height: auto;
+        align-self: center;
+        margin: 14px 0px;
+    }
+    #articulo > iframe {
+        align-self: center;
+        margin: 16px 0px;
+        max-width: 100%;
+    }

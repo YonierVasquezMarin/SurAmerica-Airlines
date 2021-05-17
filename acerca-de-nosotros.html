@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerca de nosotros</title>
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/acerca-de-nosotros.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <nav id="barraDeNavegacion">
+            <img src="imgs/img-logo-suramerica-airlines.png" alt="logo de SurAmerica Airlines" id="logoSurAmerica">
+            <nav id="menuDeEnlaces">
+                <a href="index.html"><span>Empieza aquí</span></a>
+                <a href="adquirir-vuelo.html"><span>Adquirir vuelo</span></a>
+                <a href="noticias.html"><span>Noticias</span></a>
+                <a href="#"><span>Conocenos</span></a>
+            </nav>
+            <a href="cesta.html" id="cajaCesta"><span id="logoCesta"
+                    class="material-icons-outlined">shopping_cart</span></a>
+            <button id="btnDesplegarMenu"><span class="material-icons-outlined">menu</span></button>
+        </nav>
+
+        <!-- Menu de navegacion para pantallas pequeñas -->
+        <nav id="navegacionPantallasChicas">
+            <span>
+                <h2>Menú:</h2>
+                <button id="btnCerrarMenu">
+                    <span class="material-icons-outlined">close</span>
+                </button>
+            </span>
+            <ol>
+                <li class="enlacesPantallaChica"><a href="index.html"><span>Empieza aquí</span></a></li>
+                <li class="enlacesPantallaChica"><a href="adquirir-vuelo.html"><span>Adquirir vuelo</span></a></li>
+                <li class="enlacesPantallaChica"><a href="noticias.html"><span>Noticias</span></a></li>
+                <li class="enlacesPantallaChica"><a href="#"><span>Conocenos</span></a></li>
+            </ol>
+        </nav>
+        <script src="js/desplegarMenu.js"></script>
+    </header>
+
+    <main>
+        <article id="articulo">
+            <h1>Acerca de nosotros:</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias exercitationem voluptatem unde
+                explicabo reprehenderit ipsam animi commodi. Vero beatae atque reiciendis officiis itaque libero
+                similique omnis quisquam fuga ea. In ratione quia ea a perferendis, iste sed enim saepe laudantium
+                architecto numquam fuga possimus dolor reiciendis, exercitationem aliquid officiis. Fuga!
+            </p>
+            <img src="imgs/referencias/img-azafata-en-avion.png" alt="azafata en avion">
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia ipsa illum quod quisquam deleniti?
+                Natus, sed. Numquam fugiat veritatis sed!
+            </p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/D-JbFijsKnY"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur tenetur odit corporis accusamus
+                exercitationem! At culpa iusto cumque repudiandae optio.
+            </p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26750.11859415763!2d-74.15423705217519!3d4.695298026873889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9b646667885b%3A0xb03f261ee6926ef1!2sAeropuerto%20Internacional%20El%20Dorado!5e0!3m2!1ses!2sco!4v1621285012797!5m2!1ses!2sco"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta animi natus eos placeat tempore facere
+                perferendis ipsam harum velit atque!
+            </p>
+        </article>
+    </main>
+
+    <footer>
+        <div id="footer-contenedor">
+            <div>
+                <h3>Redes sociales</h3>
+                <img src="imgs/redes-sociales/img-facebook.svg" alt=""><a href="https://www.facebook.com/"
+                    target="_blank">Facebook</a><br>
+                <img src="imgs/redes-sociales/img-instagram.svg" alt=""><a href="https://www.instagram.com/"
+                    target="_blank">Instagram</a><br>
+                <img src="imgs/redes-sociales/img-youtube.svg" alt=""><a href="https://www.youtube.com/"
+                    target="_blank">YouTube</a><br>
+                <img src="imgs/redes-sociales/img-twitter.svg" alt=""><a href="https://www.twitter.com"
+                    target="_blank">Twitter</a>
+            </div>
+            <div>
+                <h3>Más enlaces:</h3>
+                <a href="noticias.html">Noticias</a><br>
+                <a href="acerca-de-nosotros.html">Acerca de nosotros</a><br>
+                <a href="noticias/nuestra-gestion-en-el-covid-19.html">Nuestra gestión en el covid-19</a>
+            </div>
+            <div>
+                <h3>Contactos</h3>
+                <span><strong>Tel.: </strong>+57 887 723</span>
+                <span><strong>Dirección:</strong> Calle #23 - Carrera #18 (Bogotá, Colombia)</span>
+            </div>
+        </div>
+        <div>
+            2021 - Con <i class="em em-hearts" aria-role="presentation" aria-label="BLACK HEART SUIT"></i> desde
+            Colombia.
+        </div>
+    </footer>
+
+</body>
+
+</html>
