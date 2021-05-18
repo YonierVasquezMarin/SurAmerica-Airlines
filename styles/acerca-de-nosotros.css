@@ -18,7 +18,6 @@
         #articulo > p:nth-of-type(1)::first-letter {
             font-size: 55px;
             color: red;
-            margin-right: 5px;
         }
     #articulo > img {
         width: 100%;
@@ -31,4 +30,8 @@
         align-self: center;
         margin: 16px 0px;
         max-width: 100%;
+    }
+    #articulo li {
+        font-size: 19px;
+        margin-bottom: 11px;
     }
