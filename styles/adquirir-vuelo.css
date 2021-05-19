@@ -2,7 +2,12 @@
     max-width: 1250px;
     margin: 10px auto;
     padding: 0 24px;
+    color: #3e3d3d;
+    font-family: system-ui;
 }
+    #formulario h1 {
+        font-size: 32px;
+    }
     input, select {
         margin-bottom: 27px;
         font-size: 16px;
@@ -19,6 +24,7 @@
         border: 2px solid #00000052;
         border-radius: 10px;
         box-shadow: 5px 5px 5px 1px #808080b0;
+        cursor: pointer;
     }
     #precioTotal {
         font-size: 25px;
@@ -44,7 +50,6 @@
     }
     #txtAddOk {
         display: none;
-        color: green;
         font-weight: bolder;
         font-size: 14px;
     }

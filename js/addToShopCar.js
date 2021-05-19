@@ -3,6 +3,8 @@
  * "operacionesComunes.js".
  */
 document.getElementById("btnAddToShopCar").addEventListener("click", () => {
+    let tConfirmacionRegistro = document.getElementById("txtAddOk");
+
     if (camposCompletados() && sonCiudadesDiferentes()) {
         let registroVuelo = {
             nombreUsuario: nombre.value,
@@ -15,9 +17,21 @@ document.getElementById("btnAddToShopCar").addEventListener("click", () => {
             valorViajeUsuario: calcularPrecioVuelo()
         }
 
-        //notificar que todo está guardado correctamente
-        document.getElementById("txtAddOk").style.display = "inline";
+        //Convertir el objeto a una cadena de texto
+        let tRegistroVuelo = JSON.stringify(registroVuelo);
 
-        console.log(registroVuelo)
+        //Guardar el String en Local Storage
+        localStorage.setItem("registroVuelo", tRegistroVuelo);
+
+        //notificar que todo está guardado correctamente
+        tConfirmacionRegistro.innerHTML = "Añadido correctamente";
+        tConfirmacionRegistro.style.color = "green";
+        tConfirmacionRegistro.style.display = "inline";
+
+    } else {
+        //Mostrar un mensaje en rojo
+        tConfirmacionRegistro.innerHTML = "Faltan datos";
+        tConfirmacionRegistro.style.color = "red";
+        tConfirmacionRegistro.style.display = "inline";
     }
 });
