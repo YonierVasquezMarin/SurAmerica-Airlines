@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adquiere tu vuelo</title>
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/adquirir-vuelo.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <nav id="barraDeNavegacion">
+            <img src="imgs/img-logo-suramerica-airlines.png" alt="logo de SurAmerica Airlines" id="logoSurAmerica">
+            <nav id="menuDeEnlaces">
+                <a href="index.html"><span>Empieza aquí</span></a>
+                <a href="#"><span>Adquirir vuelo</span></a>
+                <a href="noticias.html"><span>Noticias</span></a>
+                <a href="acerca-de-nosotros.html"><span>Conocenos</span></a>
+            </nav>
+            <a href="cesta.html" id="cajaCesta"><span id="logoCesta"
+                    class="material-icons-outlined">shopping_cart</span></a>
+            <button id="btnDesplegarMenu"><span class="material-icons-outlined">menu</span></button>
+        </nav>
+
+        <!-- Menu de navegacion para pantallas pequeñas -->
+        <nav id="navegacionPantallasChicas">
+            <span>
+                <h2>Menú:</h2>
+                <button id="btnCerrarMenu">
+                    <span class="material-icons-outlined">close</span>
+                </button>
+            </span>
+            <ol>
+                <li class="enlacesPantallaChica"><a href="index.html"><span>Empieza aquí</span></a></li>
+                <li class="enlacesPantallaChica"><a href="#"><span>Adquirir vuelo</span></a></li>
+                <li class="enlacesPantallaChica"><a href="noticias.html"><span>Noticias</span></a></li>
+                <li class="enlacesPantallaChica"><a href="acerca-de-nosotros.html"><span>Conocenos</span></a></li>
+            </ol>
+        </nav>
+        <script src="js/desplegarMenu.js"></script>
+    </header>
+
+    <main>
+        <article id="formulario">
+            <h1>Adquiere tu vuelo:</h1>
+            <form action="procesar-compra.php" method="GET">
+                <h3>Nombre completo:</h3>
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+                <h3>DNI:</h3>
+                <input type="text" name="dni" id="dni" placeholder="DNI" required>
+                <h3>E-mail:</h3>
+                <input type="email" name="email" id="email" placeholder="Email" required>
+                <h3>Teléfono:</h3>
+                <input type="tel" name="telefono" id="telefono" placeholder="Teléfono" required>
+
+                <h3>Ciudad de partida:</h3>
+                <select name="ciudadPartida" id="selectStartCity">
+                    <option value="Santiago de Chile">Santiago de Chile</option>
+                    <option value="Buenos Aires">Buenos Aires</option>
+                    <option value="Montevideo">Montevideo</option>
+                    <option value="Bogotá">Bogotá</option>
+                    <option value="Quito">Quito</option>
+                    <option value="Caracas">Caracas</option>
+                </select>
+                <h3>Ciudad de destino:</h3>
+                <select name="ciudadPartida" id="selectDestinityCity">
+                    <option value="Santiago de Chile">Santiago de Chile</option>
+                    <option value="Buenos Aires">Buenos Aires</option>
+                    <option value="Montevideo">Montevideo</option>
+                    <option value="Bogotá">Bogotá</option>
+                    <option value="Quito">Quito</option>
+                    <option value="Caracas">Caracas</option>
+                </select>
+                <h3>Cantidad de personas:</h3>
+                <select name="cantidadDePersonas" id="selectPeopleCount">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <br>
+
+                <input type="button" value="Calcular precio" id="btnCalcularPrecio">
+                <span id="precioTotal">USD$ 0</span>
+                <br>
+                <input type="button" name="btnAddToShopCar" value="Añadir a la cesta" id="btnAddToShopCar">
+                <span id="txtAddOk">Añadido correctamente</span>
+                <br>
+                <input type="submit" value="Comprar vuelo">
+            </form>
+
+            <script src="js/operacionesComunes.js"></script>
+            <script src="js/calcularPrecioVuelo.js"></script>
+            <script src="js/addToShopCar.js"></script>
+        </article>
+    </main>
+
+</body>
+
+</html>
