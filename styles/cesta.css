@@ -1,55 +1,58 @@
-#cesta {
-    max-width: 1300px;
-    margin: 10px auto;
-    color: #3e3d3d;
-    padding: 0px 19px;
+main {
+    min-height: 500px;
 }
-    #cesta h1 {
-        font-size: 32px;
+    #cesta {
+        max-width: 1300px;
+        margin: 10px auto;
+        color: #3e3d3d;
+        padding: 0px 19px;
     }
-    #datosCesta {
-        font-size: 18px;
-        margin-left: 33px;
-    }
-    span {
-        display: inline-block;
-        margin-bottom: 16px;
-    }
-        .propiedad {
-            font-weight: bold;
+        #cesta h1 {
+            font-size: 32px;
         }
-            .tPrecio {
-                font-size: 24px;
-                margin: 18px 0;
-                margin-bottom: 28px;
+        #datosCesta {
+            font-size: 18px;
+            margin-left: 33px;
+        }
+        span {
+            display: inline-block;
+            margin-bottom: 16px;
+        }
+            .propiedad {
+                font-weight: bold;
             }
-            button:not(#btnDesplegarMenu, #btnCerrarMenu), input[type="submit"] {
-                margin-right: 14px;
-                margin-bottom: 22px;
-                font-size: 15px;
-                color: white;
-                height: 38px;
-                border: 2px solid #00000052;
-                border-radius: 10px;
-                box-shadow: 5px 5px 5px 1px #808080b0;
-                cursor: pointer;
-            }
-            #btnEliminarCesta {
-                background-color: #009688;
-            }
-            #btnEliminarCesta:active {
-                background-color: #057d72;
-            }
-            #btnActualizarCesta {
-                background-color: #a52a2ad4;
-            }
-            #btnActualizarCesta:active {
-                background-color: #a52a2a;
-            }
-            input[type="submit"] {
-                background-color: #9c27b0;
-                width: 193px;
-            }
-            input[type="submit"]:active {
-                background-color: #692475;
-            }
+                .tPrecio {
+                    font-size: 24px;
+                    margin: 18px 0;
+                    margin-bottom: 28px;
+                }
+                button:not(#btnDesplegarMenu, #btnCerrarMenu), input[type="submit"] {
+                    margin-right: 14px;
+                    margin-bottom: 22px;
+                    font-size: 15px;
+                    color: white;
+                    height: 38px;
+                    border: 2px solid #00000052;
+                    border-radius: 10px;
+                    box-shadow: 5px 5px 5px 1px #808080b0;
+                    cursor: pointer;
+                }
+                #btnEliminarCesta {
+                    background-color: #009688;
+                }
+                #btnEliminarCesta:active {
+                    background-color: #057d72;
+                }
+                #btnActualizarCesta {
+                    background-color: #a52a2ad4;
+                }
+                #btnActualizarCesta:active {
+                    background-color: #a52a2a;
+                }
+                input[type="submit"] {
+                    background-color: #9c27b0;
+                    width: 193px;
+                }
+                input[type="submit"]:active {
+                    background-color: #692475;
+                }
