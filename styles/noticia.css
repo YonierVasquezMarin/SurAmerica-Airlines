@@ -10,7 +10,6 @@
     #noticia > section:nth-child(1) {
         max-width: 750px;
         line-height: 26px;
-        font-family: system-ui;
     }
         #noticia > section:nth-child(1) > h1 {
             margin-top: 0px;
@@ -42,6 +41,7 @@
         box-shadow: 0px 0px 10px 1px grey;
         border-radius: 6px;
         height: fit-content;
+        height: -moz-fit-content;
     }
         #noticia > section:nth-child(2) > h3 {
             margin-top: 0px;

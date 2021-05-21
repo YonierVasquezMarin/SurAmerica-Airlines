@@ -11,9 +11,10 @@ function calcularPrecioVuelo() {
     //los precios para las posibles parejas del viaje (15 posibles combinaciones sin repetir)
     const precios = [300, 450, 1000, 800, 1000, 300, 1000, 800, 800, 1000, 800, 750, 300, 250, 450];
 
-    //obtener las dos ciudades seleccionadas
+    //obtener las dos ciudades seleccionadas y la cantidad de pasajeros
     let startCity = selectStartCity.value;
     let destinityCity = selectDestinityCity.value;
+    let cantidadPersonas = document.getElementById("selectPeopleCount").value;
 
     //definir el precio según la ciudad elegida
     let valorViaje = 0;
@@ -31,6 +32,8 @@ function calcularPrecioVuelo() {
         ciudadesPosibles.shift();
     }
 
+    valorViaje *= Number.parseInt(cantidadPersonas);
+
     return valorViaje;
 }
 
@@ -47,10 +50,7 @@ function calcularPrecioVuelo() {
  */
 document.getElementById("btnCalcularPrecio").addEventListener("click", () => {
     if (sonCiudadesDiferentes()) {
-        let valorViaje = calcularPrecioVuelo();
-        //multiplicar el valor del viaje por la cantidad de personas a viajar.
-        let cantidadPersonas = document.getElementById("selectPeopleCount").value;
-        let precioTotal = Number.parseInt(cantidadPersonas) * valorViaje;
+        let precioTotal = calcularPrecioVuelo();
 
         //mostrar el precio en la pantalla
         document.getElementById("precioTotal").innerHTML = "USD$ " + precioTotal;
