@@ -18,6 +18,12 @@ main {
             display: inline-block;
             margin-bottom: 16px;
         }
+            #datosCesta a {
+                display: inline-block;
+                color: #0012f5d9;
+                text-decoration: none;
+                margin-bottom: 20px;
+            }
             .propiedad {
                 font-weight: bold;
             }

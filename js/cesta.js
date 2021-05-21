@@ -30,7 +30,8 @@ function mostrarRegistroDeVuelo() {
         });
 
     } else {
-        elementoHtmlCesta.innerHTML = '<span>No hay vuelos registrados en tu cesta.</span><br>' +
+        elementoHtmlCesta.innerHTML = '<span>No hay vuelos registrados en tu cesta.&nbsp;</span>' +
+        '<a href="adquirir-vuelo.html">Adquiere tu vuelo.</a><br>' +
         '<button id="btnActualizarCesta">Actualizar cesta</button>';
 
         document.getElementById("btnActualizarCesta").addEventListener("click", () => {
