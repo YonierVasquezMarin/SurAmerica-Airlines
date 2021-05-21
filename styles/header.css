@@ -29,8 +29,7 @@ body {
                     header span {
                         margin: 0 11px;
                         font-size: 19px;
-                        color: #101f73;
-                        font-weight: bold;
+                        color: #fcfcff;
                     }
                     header span:hover {
                         color: blue;
@@ -38,7 +37,7 @@ body {
                 #logoCesta {
                     vertical-align: middle;
                     font-size: 38px;
-                    color: firebrick;
+                    color: #ffeb3b;
                 }
                 #btnDesplegarMenu {
                     background-color: transparent;

@@ -18,6 +18,10 @@
     margin-right: 23px;
     max-width: 432px;
 }
+.zonasDeContenido h1 {
+    color: white;
+    background-color: #3f51b5;
+}
 .zonasDeContenido p {
     font-size: 35px;
     margin: 0px;
@@ -27,8 +31,8 @@
     }
         #linkGrandeAdquirirVuelo {
             border: 2px solid black;
-            background-color: green;
-            padding: 7px;
+            background-color: #3f51b5;
+            padding: 11px;
             border-radius: 26px;
             margin-top: 22px;
             display: inline-block;
@@ -41,7 +45,8 @@
     }
 
 .zonasDeContenido:nth-child(1) {
-    background-color: #a55ce9;
+    background-image: url("../imgs/fondos/img-paisaje-con-nubes.jpg");
+    background-size: cover;
 }
 .zonasDeContenido:nth-child(2) {
     background-color: brown;
